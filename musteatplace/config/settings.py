@@ -25,8 +25,14 @@ SECRET_KEY = 'gp^^&*gt6^4)byyuf81)^))#*aa+)2x&4au+kyg39$xxi6&r2j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1',]
+ALLOWED_HOSTS = ['osorimagu.pythonanywhere.com','0.0.0.0','127.0.0.1',]
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.naver.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'lhs4859@naver.com'
+EMAIL_HOST_PASSWORD = ''
 
 # Application definition
 
